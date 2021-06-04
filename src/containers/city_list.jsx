@@ -28,4 +28,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default CityList;
+export default connect(mapStateToProps)(CityList);
