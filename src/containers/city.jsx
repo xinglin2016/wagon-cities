@@ -12,4 +12,8 @@ const City = (props) => {
   );
 };
 
-export default City;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectCity }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(City);
