@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -28,4 +27,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default ActivityCity;
+export default connect(mapStateToProps)(ActiveCity);
